@@ -1,0 +1,21 @@
+[project]
+name = "nba-scores"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Andy Miles", email = "andy@arrivingskills.ai" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "nba-api>=1.11.4",
+    "pandas>=3.0.3",
+]
+
+[project.scripts]
+nba-scores = "nba_scores:main"
+nba-download = "nba_scores.nba_download:main"
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12.0"]
+build-backend = "uv_build"
